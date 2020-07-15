@@ -28,7 +28,7 @@ body{
 #searchBar{
     display: flex;
     align-items: center;
-    margin: 1.8rem;
+    margin: 1.8rem 0;
 }
 #searchIcon{
     width: 1.2rem;
@@ -55,7 +55,7 @@ body{
     justify-content: center;
 }
 .btn-search{
-    background-color: #fff;
+    background-color: #ffffff79;
     width: 8rem;
     height: 2rem;
     margin: 0 0.7rem;
@@ -73,7 +73,7 @@ body{
 }
 .language{
     display: flex;
-    margin: 2rem;
+    margin: 2rem 0;
     font-family: arial,sans-serif;
     font-size: 0.782rem;
     line-height: 1rem;
@@ -85,4 +85,28 @@ body{
 }
 .lang-list:hover{
     text-decoration: underline; 
+}
+
+
+@media (max-width: 685px){
+    #searchBox{
+        width: 80vw;
+        margin: 5rem 0 0 0;
+    }
+    #buttonBar{
+        width: 100vw;
+    }
+    .language{
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: absolute;
+        bottom: -40vh;
+    }
+}
+@media(max-width: 275px){
+    #doodle{
+        width: 12rem;
+    }
 }
