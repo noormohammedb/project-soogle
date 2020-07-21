@@ -123,7 +123,12 @@ body{
 #result-page #searchBox-result{
     width: 640px;
     height: 44px;
-    border-radius: 50px;
+    border-radius: 24px;
+    border:1px solid #dfe1e5;
+}
+#result-page #searchBox-result:hover{
+    box-shadow: 0 1px 6px -1px #20212447;
+    border-color: #eee2e200;
     border-top: none;
 }
 #result-page .box-icons{
