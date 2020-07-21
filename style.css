@@ -97,32 +97,44 @@ body{
 
 /* result page */
 
-/* #result-page .container{
-    
+/* #result-page .container{    
 } */
 
-/* #result-page .wrap{
-} */
+#result-page .wrap{
+    display: flex ;
+    flex-direction: column;
+    min-height: 100vh;
+}
 #result-page .top-row{
     display: flex;
-    padding: 1.6rem 0;
+    align-items: center;
+    padding: 1.35rem 0;
 }
 
 /* #result-page */
 
 #result-page .nav-logo{
-    width: 92px;
+    width: 88px;
     height: 30px;
-    margin: 0 1.6rem;
+    margin-right: 0.85rem;
+    margin-left: 1.75rem;
 }
 #result-page .searchbox{
-    width: 690px;
+    width: 790px;
     height: 44px;
     margin: 0 2rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
 }
 #result-page #searchBox-result{
-    width: 640px;
-    height: 44px;
+    width: 690px;
+    height: 45px;
+    padding: 0 5.5rem 0 1.2rem;
+    font-family: arial,sans-serif;
+    font-size: 1rem;
+    color: #222;
+    outline: none;
     border-radius: 24px;
     border:1px solid #dfe1e5;
 }
@@ -132,20 +144,64 @@ body{
     border-top: none;
 }
 #result-page .box-icons{
+    width: 4rem;
     position: relative;
-    right: 4.3rem;
-    top: 0.3rem;   
-    display: inline-block;
+    right: 5.01rem;
+    bottom: 0.05rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 #result-page #crossIcon{
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 44px;
+    text-align: center;
+    fill: #80868b;
 }
 #result-page #searchicon{
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
+    fill: #4285f4;
 }
-
+#result-page .end-wrap{
+    /* background-color: rgba(156, 35, 35, 0.397); */
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 1.5rem;
+}
+#result-page .dot-9x9{
+    height: 24px;
+    width: 24px;
+    margin: 0 1rem;
+    align-self: center;
+    fill: #5f6368;
+}
+#result-page .sign-in{
+    background: #1a73e8;
+    color: #ffffff;
+    font-family: Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-size: 0.875rem;
+    width: 96px;
+    height: 35px;
+    border: none;
+    border-radius: 4px;
+}
+#result-page .results{
+    background-color: #44ccff;
+    /* flex-basis: 100%; */
+    flex-grow: 4;
+}
+#result-page .pagnation{
+    background-color: #fff000;
+    flex-grow: 1;
+    
+}
+#result-page .footer{
+    background-color: #bb8152;
+    flex-grow: 0.1;
+}
+/* #result-page . */
 
 @media (max-width: 685px){
     #searchBox{
