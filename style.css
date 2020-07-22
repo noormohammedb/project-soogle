@@ -103,6 +103,28 @@ body{
     text-decoration: underline; 
 }
 
+@media (max-width: 685px){
+    #searchBox{
+        width: 80vw;
+        margin: 5rem 0 0 0;
+    }
+    #buttonBar{
+        width: 100vw;
+    }
+    .language{
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: absolute;
+        bottom: -40vh;
+    }
+}
+@media(max-width: 275px){
+    #doodle{
+        width: 12rem;
+    }
+}
 
 /* result page */
 
@@ -199,20 +221,7 @@ body{
     border: none;
     border-radius: 4px;
 }
-#result-page .results{
-    background-color: #44ccff;
-    /* flex-basis: 100%; */
-    flex-grow: 4;
-}
-#result-page .pagnation{
-    background-color: #fff000;
-    flex-grow: 1;
-    
-}
-#result-page .footer{
-    background-color: #bb8152;
-    flex-grow: 0.1;
-}
+
 #result-page .section-row{
     display: flex;
     /* justify-content: space-between; */
@@ -255,30 +264,68 @@ body{
     padding: 10px;
     color: #5f6368;
 }
-
-
-
 /* #result-page . */
 
-@media (max-width: 685px){
-    #searchBox{
-        width: 80vw;
-        margin: 5rem 0 0 0;
+@media (max-width:1165px){
+    #result-page .searchbox{
+        width: 60vw;
+        margin: 0;
     }
-    #buttonBar{
-        width: 100vw;
+    #result-page #searchBox-result{
+        width: 90%;
     }
-    .language{
-        width: 100vw;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        position: absolute;
-        bottom: -40vh;
+    #result-page .end-wrap{
+        padding-left: 0;
+    }
+    #result-page .section-row{
+        width: 50vw;
+    }
+    #result-page .sec-com{
+        margin-right: 0.3rem;
     }
 }
-@media(max-width: 275px){
-    #doodle{
-        width: 12rem;
+@media (max-width: 950px){
+    #result-page .section-row{
+        /* display: none; */
+        margin-left: 15vw;
     }
+    #result-page .sec-com{
+        margin: 0;
+    }
+    #result-page .section-row *{
+        font-size: 10px;
+    }
+}
+@media (max-width: 720px){
+    #result-page .nav-logo{
+        margin: 0;
+    }
+    #result-page .end-wrap{
+        padding: 0;
+    }
+    #result-page .dot-9x9{
+        margin: 0;
+        margin-right: 10px;
+    }
+}
+@media (max-width: 530px){
+
+    #result-page .section-row{
+        display: none;
+    }
+}
+
+#result-page .results{
+    background-color: #44ccff;
+    /* flex-basis: 100%; */
+    flex-grow: 4;
+}
+#result-page .pagnation{
+    background-color: #fff000;
+    flex-grow: 1;
+    
+}
+#result-page .footer{
+    background-color: #bb8152;
+    flex-grow: 0.1;
 }
