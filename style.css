@@ -264,6 +264,18 @@ body{
     padding: 10px;
     color: #5f6368;
 }
+#result-page .results-main{
+    background-color: #44ccff;
+    margin-left: 12vw;
+    width: auto;
+    flex-grow: 4;
+}
+#result-page .results-section{
+    background: #f89d0f;
+    width: 60vw;
+}
+
+
 /* #result-page . */
 
 @media (max-width:1165px){
@@ -315,11 +327,6 @@ body{
     }
 }
 
-#result-page .results{
-    background-color: #44ccff;
-    /* flex-basis: 100%; */
-    flex-grow: 4;
-}
 #result-page .pagnation{
     background-color: #fff000;
     flex-grow: 1;
