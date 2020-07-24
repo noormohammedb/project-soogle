@@ -281,6 +281,7 @@ body{
 }
 #result-page .head-anchar{
     text-decoration: none;
+    outline: none;
 }
 #result-page .head-anchar:hover  .re-title{
     text-decoration: underline;
