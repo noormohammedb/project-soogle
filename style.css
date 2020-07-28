@@ -320,7 +320,7 @@ body{
 }
 
 #result-page .pagnation{
-    height: 20vh;
+    height: 100px;
     padding: 10px 0;
     display: flex;
     justify-content: center;
